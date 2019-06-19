@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  title = 'webview-poc';
-
-  constructor() { }
-
-  ngOnInit() {
+  title = 'Globals Button styles';
+  ngOnInit(): void {
+    setTimeout(() => this.themeColor = 'primary', 2000);
   }
+  themeColor = 'dark';
 }

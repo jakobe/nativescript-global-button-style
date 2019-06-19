@@ -1,5 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <ActionBar [title]="title"></ActionBar>
-<StackLayout  class="p-20">
+<StackLayout class="p-20" [ngClass]="{'primary': themeColor === 'primary', 'dark': themeColor === 'dark'}">
     <Label text="Welcome to {{ title }}!" class="h1 text-center" textWrap="true"></Label>
+    <Button text="Button Text" class="attention-level3"></Button>
 </StackLayout>
