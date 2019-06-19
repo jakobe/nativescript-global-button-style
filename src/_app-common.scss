@@ -1,2 +1,41 @@
 // Place any CSS rules you want to apply on both iOS and Android here.
 // This is where the vast majority of your CSS code goes.
+Button {
+  background-color: transparent;
+  border-color: #b7babd;
+  color: #fff;
+  border-radius: 100;
+  border-width: 1;
+
+  // we default to 'md' size.
+  margin: 4;
+  padding: 8 24 8 24;
+  font-size: 14;
+  height: 40;
+  line-height: 18;
+}
+
+
+
+.primary {
+    Label {
+        color: darkgreen;
+    }
+
+    Button {
+        border-color: darkgreen;
+        color: darkgreen;
+    }
+}
+
+.dark {
+    Label {
+        color: #fff;
+    }
+
+    Button {
+        border-color: #fff;
+        color: #fff;
+    }
+}
+
